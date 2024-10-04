@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+        ol{
+            list-style-type: decimal;
+        }
+        
+        ul li{
+            color:red;
+/*
+            display: inline-block;
+            margin: 20px;
+*/
+        }
+        
+        ul{
+            list-style-type: none;
+        }
+        
+        .month{
+/*            list-style-type: square;*/
+            list-style-image: url("arrow-top-right-bold-box-custom.png")
+        }
+        
+        .position{
+            list-style-position: outside;
+        }
+        
+        li::before{
+            content: "$";
+            color: green;
+        }
+        
+        .month :after{
+/*            background-image: url(arrow-right-bold-custom.png);*/
+            content: " End";
+        }
+        
+    </style>
+</head>
+<body>
+    <ol reversed>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum dolor.</li>
+    </ol>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure soluta totam necessitatibus inventore, quaerat fuga quam eos quos a! Corporis!</p>
+    <ol start="6">
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li value="10">Lorem ipsum dolor.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li value="20">Lorem ipsum dolor.</li>
+        <li>Lorem ipsum dolor.</li>
+    </ol>
+    
+    <ul>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum dolor.</li>
+    </ul>
+    
+    <dl>
+        <dt>HTML</dt>
+        <dd>Хто тебе може любити</dd>
+        <dt>HTML 2</dt>
+        <dd><ol>
+            <li></li>
+            <li></li>
+        </ol></dd>
+    </dl>
+    
+    <ol>
+        <li>Зима</li>
+        <li>Весна
+            <ul class="month">
+                <li>Березень</li>
+                <li>Квітень</li>
+                <li>Травень</li>
+            </ul>
+        </li>
+        
+        <li>Літо</li>
+        <li></li>
+    </ol>
+    
+<!--    ol>(li>lorem50)*10-->
+    <ol class="position">
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sed id ad ex esse soluta, nemo maiores minima? Architecto voluptatem quidem voluptate autem tenetur impedit, tempore eos perferendis libero enim unde quisquam natus illo suscipit soluta, nostrum facere labore ut, nulla error incidunt assumenda vitae. Deleniti id autem, nobis nulla.</li>
+        <li>Fugit expedita blanditiis vel nam accusamus quae quasi ad voluptas nihil asperiores tenetur impedit voluptates officiis provident veritatis cumque deserunt illo, dolorum quam alias iusto deleniti ea! Dignissimos, necessitatibus tempore illo quia temporibus, delectus rerum. Labore sapiente, vitae maiores, temporibus ex, accusantium ea eos dicta omnis a dolores necessitatibus quibusdam?</li>
+        <li>Sapiente in odit, dicta, dolore tenetur fugit unde quia vitae illum! Autem id fugit ullam odit sint dolorum culpa atque commodi labore, consectetur ex numquam ducimus velit, illum, sunt ipsa quas. Minus nihil itaque debitis, laborum error sequi! Similique repellat aut aliquam labore rem! Molestias accusamus numquam ipsa excepturi dolores.</li>
+        <li>Perspiciatis perferendis eligendi, quia sit eum illo odio. Eveniet debitis ex quas nobis vero itaque, maiores veniam impedit! Eaque tenetur eligendi, totam id soluta, deleniti quas ab dignissimos molestiae, sit porro aspernatur minus labore. Nihil aliquam asperiores eum maxime sed aspernatur cumque, distinctio sunt labore dolores veritatis molestias sequi, illo.</li>
+        <li>Architecto similique iure autem corrupti obcaecati sint! Voluptates beatae provident culpa quasi at ex dicta, similique cumque delectus a, harum repellendus molestias facere praesentium aut accusantium numquam tempora explicabo, nesciunt quo molestiae animi mollitia. Ipsum ullam, ipsa porro, ea quae, iure, dolore doloremque libero culpa eius officiis perferendis corporis asperiores!</li>
+        <li>Aspernatur quas cum tempora aliquam atque ipsum harum magni quaerat molestiae, minima enim suscipit libero, veritatis aliquid a nostrum voluptas laudantium, neque repellendus architecto amet distinctio excepturi! Voluptatum ipsum harum, at! Sed tempore ea voluptatem. Commodi eligendi, facere repellendus veniam eveniet harum fugit numquam expedita similique tempore excepturi quod amet.</li>
+        <li>Pariatur quam vitae in cum, voluptas aliquid laboriosam nesciunt natus dicta saepe nobis voluptates eligendi hic deleniti totam dolorum. Rem magnam, modi! Magni saepe temporibus facilis vel ea provident ullam, quis vero nostrum cupiditate laborum, placeat tempora eveniet, inventore explicabo architecto aspernatur beatae soluta amet itaque quo debitis cum quaerat.</li>
+        <li>Eveniet modi, fugiat error voluptas blanditiis quaerat natus neque dolorum, voluptate, impedit nisi culpa. Rem culpa sit natus maiores modi sapiente dolores ipsa reprehenderit eum eveniet, nihil, blanditiis repellat voluptates sequi earum ex in, animi sint dolorum error assumenda corporis quibusdam? Magnam, assumenda! Reiciendis est mollitia maxime placeat assumenda aperiam.</li>
+        <li>At voluptate perspiciatis ullam accusantium hic error, veniam minima eos, itaque quia facilis inventore sit nostrum libero. Animi sit deleniti ducimus expedita earum sint itaque nemo, ab fugit! Odio enim perspiciatis non animi architecto ipsa ex eos veritatis consectetur hic, in esse soluta. Hic neque eos rerum eligendi, cumque culpa.</li>
+        <li>Vero tempore quo aspernatur accusantium repellendus mollitia, velit alias. Quae, laudantium saepe! Provident officiis magni ipsa temporibus facilis et ut vel minima aperiam repellat. Voluptates rerum, iusto fugiat possimus impedit eveniet quos cum labore deserunt odit laboriosam corporis. Laudantium officia a est blanditiis suscipit praesentium reprehenderit impedit, in beatae aperiam.</li>
+    </ol>
+<!--    ul>li{Lorem ipsum dolor.}*5-->
+<!--    ol>li*5-->
+    
+</body>
+</html>
