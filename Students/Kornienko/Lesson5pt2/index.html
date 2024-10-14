@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList</title>
+
+    <style>
+        li
+        {
+            padding: 10px;
+            position: relative;
+            list-style-position: inside;
+        }
+
+        li:nth-child(odd)
+        {
+            background-color: #7cc8ff;
+        }
+
+        li:nth-child(even)
+        {
+            background-color: #3eaeff;
+        }
+
+        li.checked
+        {
+            list-style-image: url('checked_16.png');
+            text-decoration-line: line-through;
+            background-color: #dbdbdb;
+        }
+
+        li.unchecked
+        {
+            list-style-image: url('unchecked_16.png');
+        }
+
+        li.unchecked:nth-child(odd)::before
+        {
+            background-color: #7cc8ff;
+        }
+
+        li.unchecked:nth-child(even)::before
+        {
+            background-color: #3eaeff;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>My To Do List</h1>
+
+    <ul>
+        <li class="unchecked"><span>Paragraph 1</span></li>
+        <li class="unchecked"><span>Paragraph 2</span></li>
+        <li class="unchecked"><span>Paragraph 3</span></li>
+        <li class="unchecked"><span>Paragraph 4</span></li>
+        <li class="checked"><span>Paragraph 5</span></li>
+    </ul>
+
+</body>
+</html>

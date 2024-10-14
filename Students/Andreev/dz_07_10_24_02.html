@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+
+        body
+        {
+            margin: 20px;
+        }
+
+       ul
+        {
+            list-style-type: none;
+        }
+
+        span
+        {
+            list-style-image: url(strelka.png);
+        }
+
+        li
+        {
+            padding-left: 5px;
+        }
+
+        .winter li::before
+        {
+            content: "\1F9CA";
+        }
+
+        .spring li::before
+        {
+            content: "\1F337";
+        }
+
+        .summer li::before
+        {
+            content: "\1F349";
+        }
+
+        .autumn li::before
+        {
+            content: "\1F341";
+        }
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li> <span>Winter</span>
+                <ul class="winter" >
+                    <li>December</li>
+                    <li>January</li>
+                    <li>February</li>
+                </ul>
+        </li>
+
+        <li>Spring
+            <ul class="spring" >
+                <li>March</li>
+                <li>April</li>
+                <li>May</li>
+            </ul>
+        </li>
+
+        <li>Summer
+            <ul class="summer" >
+                <li>June</li>
+                <li>July</li>
+                <li>August</li>
+            </ul>
+        </li>
+
+        <li>Autumn
+            <ul class="autumn" >
+                <li>September</li>
+                <li>October</li>
+                <li>November</li>
+            </ul>
+        </li>
+
+    </ul>
+</body>
+</html>

@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #007bff;
+    border-bottom: 4px solid #007bff;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+code {
+    background-color: #eaeaea;
+    padding: 2px 4px;
+    font-family: "Courier New", Courier, monospace;
+    color: #d63384;
+}
+
+pre {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+}
+
+.tags {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.code-example {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+}
+
+/* Styles for Task 2 */
+.task2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.player {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+.prologue, .scene {
+    max-width: 600px;
+    margin: 20px auto;
+    color: #007bff;
+}
+
+.prologue p, .scene p {
+    margin: 5px 0;
+}
+
+.scene-title {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0;
+    color:#007bff;
+}
+
+.character {
+    font-weight: bold;
+    color: #5a5a7d;
+}
+
+.italic {
+    font-style: italic;
+    color: #666;
+}
+
+.centered {
+    text-align: center;
+}
