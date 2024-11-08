@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .first{
+            border-left: 2px red solid;
+            border-top: 2px red dotted;
+/*        first    border-collapse: collapse;*/
+            border-spacing: 10px;
+            background-color: aqua;
+            background-image: url(bg.png);
+            background-size: cover;
+            empty-cells: hide;
+        }
+        
+        th{
+            border: 2px blue solid;
+            background-color: chartreuse;
+        }
+        
+        td{
+            border: 2px green solid;
+            background-color: crimson;
+            
+        }
+        .uniq{
+            width: 400px;
+            height: 100px;
+            text-align: center;
+            vertical-align: middle;
+            background-color: coral;
+/*
+            background-image: url(bg.png);
+            background-size: cover;
+*/
+            color:white;
+            
+        }
+        
+        .second{
+            border-collapse: collapse;
+            
+        }
+        .second td{
+            width: 180px;
+            height: 50px;
+            background-color: aliceblue;
+            
+        }
+        
+        .c9{
+            height: 400px;
+        }
+    
+    </style>
+</head>
+<body>
+    <table class="first">
+       <tr>
+           <th>Column 1</th>
+           <th>Column 2</th>
+           <th>Column 3</th>
+       </tr>
+        <tr>
+            <td>Lorem ipsum dolor.</td>
+            <td class="uniq"></td>
+            <td>Lorem ipsum dolor.</td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor.</td>
+            <td>Lorem ipsum dolor.</td>
+            <td>Lorem ipsum dolor.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Lorem ipsum dolor.</td>
+            <td></td>
+        </tr>
+    </table>
+    
+    
+    <h1></h1>
+    <table class="second">
+        <tr>
+            <td>1</td>
+            <td colspan="2">2</td>
+            <td rowspan="4">3</td>
+<!--            <td>4</td>-->
+        </tr>
+        <tr>
+            <td rowspan="3">5</td>
+            <td>6</td>
+            <td>7</td>
+<!--            <td>8</td>-->
+        </tr>
+        <tr>
+            <td class="c9" colspan="2" rowspan="2">lorem</td>
+<!--            <td>10</td>-->
+<!--            <td>11</td>-->
+<!--            <td>12</td>-->
+        </tr>
+        <tr>
+<!--            <td>13</td>-->
+<!--            <td>14</td>-->
+<!--            <td>15</td>-->
+<!--            <td>16</td>-->
+        </tr>
+    </table>
+</body>
+</html>

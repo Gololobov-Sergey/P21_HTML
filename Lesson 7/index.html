@@ -18,16 +18,37 @@
             transition: all 1s ease 0s;
 /*            transition: background-color 1s ease 0s, border 3s ease 0s;*/
             
-/*            transform: rotate(15);*/
+/*            transform: skew(15deg, 15deg);*/
+            
+/*            transform-origin: left top;*/
+/*            animation: anim 3s linear infinite alternate; */
         }
         
         a:hover{
-            background-color: blue;
+            background-color: blue ;
             color: yellow;
             border: 2px solid yellow;
-            transform: scale(1.1, 1.1);
+            transform: scale(1.2, 1.2);
         }
         
+        h1{
+            width: 300px;
+            background-color: aqua;
+            animation: anim 3s ease infinite alternate; 
+        }
+        
+        
+        @keyframes anim{
+            0%{
+                margin-left: 0px;
+            }
+            50%{
+                font-size: 40px;
+            }
+            100%{
+                margin-left: 800px;
+            }
+        }
         
     </style>
 </head>
@@ -35,5 +56,7 @@
     <a href="#">Click</a>
     <a href="#">Click</a>
     <a href="#">Click</a>
+    <h1>Lorem ipsum dolor.</h1>
+    
 </body>
 </html>

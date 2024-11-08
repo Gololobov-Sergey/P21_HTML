@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body
+        {
+            font-family: sans-serif;
+        }
+        nav ul li a
+        {
+            color:white;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px 20px;
+            
+        }
+        
+        nav ul
+        {
+            background: #4C996B;
+            display: inline-table;
+            list-style: none;
+            position: relative;
+            padding-left: 0;
+            
+        }
+        
+        nav ul li
+        {
+            float: left;
+            width: 120px;
+        }
+        
+        nav ul ul
+        {
+            display: none;
+            position: absolute;
+/*            top: 100%;*/
+        }
+        
+        nav ul li:hover
+        {
+           background: #3F8058; 
+        }
+        
+        nav ul li:hover > ul
+        {
+            display: block;
+        }
+        
+        nav ul ul li
+        {
+            float: none;
+            position: relative;
+        }
+        
+        nav ul ul ul
+        {
+            position: absolute;
+            left: 100%;
+            top: 0;
+        }
+        
+        li
+        {
+            border: 1px solid #3F8058;
+        }
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Categories</a>
+                <ul>
+                    <li><a href="">Man</a></li>
+                    <li><a href="">Woomen</a>
+                        <ul>
+                            <li><a href="">Dress</a></li>
+                            <li><a href="">Pants</a></li>
+                            <li><a href="">Shoes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Kids</a></li>
+                </ul>
+            </li>
+            <li><a href="">About</a>
+                <ul>
+                    <li><a href="">Item 1</a></li>
+                    <li><a href="">Item 2</a></li>
+                    <li><a href="">Item 3</a>
+                        <ul>
+                            <li><a href="">Content 1</a></li>
+                            <li><a href="">Content 2</a></li>
+                            <li><a href="">Content 3</a>
+                                <ul>
+                                    <li><a href="">Item 1</a></li>
+                                    <li><a href="">Item 2</a></li>
+                                    <li><a href="">Item 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Content 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Contacts</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

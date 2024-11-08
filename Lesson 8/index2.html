@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        caption{
+            caption-side: top;
+            text-align: left;
+        }
+        
+        thead{
+            color: red;
+        }
+        
+        tfoot{
+            color:green;
+        }
+        
+        tbody{
+            color:blue;
+        }
+        
+        .col1{
+            background-color: aqua;
+        }
+        
+        .col26{
+            background-color: yellow;
+        }
+        
+        .col7{
+            background-color: tomato;
+        }
+        
+        th, td{
+            padding: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <table>
+       <caption>Caption table</caption>
+       <colgroup>
+           <col class="col1">
+           <col span="5" class="col26">
+           <col class="col7">           
+       </colgroup>
+        <thead>
+            <tr>
+                <th>cell</th>
+                <th>cell</th>
+                <th>cell</th>
+                <th>cell</th>
+                <th>cell</th>
+                <th>cell</th>
+                <th>cell</th>
+            
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Fcell</td>
+                <td>Fcell</td>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+            </tr>
+            <tr>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+            </tr>
+            <tr>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+                <td>cell</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+</html>
