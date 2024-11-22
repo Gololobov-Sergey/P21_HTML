@@ -7,26 +7,72 @@
         
         .container
         {
-            display: block;
-        }
-        bl
-        {
-            height: 100px;
+            display: flex;
+            border: 2px solid red;
+            padding: 5px;
+            height: 500px;
+            
+            flex-direction: row;
+            
+            justify-content: space-around;
+            align-items: center;
+            
+            flex-wrap: wrap;
+            align-content:center;
         }
         
-        .block1
+        
+        
+        .bl
+        {
+            height: 100px;
+            width: 150px;
+            margin: 5px;
+        }
+        
+        .block:nth-child(4n+1)
         {
             background-color: aqua;
         }
+        .block:nth-child(4n+2)
+        {
+            background-color: chocolate;
+        }
+        .block:nth-child(4n+3)
+        {
+            background-color: crimson;
+        }
+        .block:nth-child(4n+4)
+        {
+            background-color: darkseagreen;
+        }
+        
+        .n8
+        {
+            order: -1;
+        }
+        
+        .n9
+        {
+            align-self: stretch;
+            order: -1
+        }
+        
+        
     
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="bl block1">1</div>
-        <div class="bl block2">2</div>
-        <div class="bl block3">3</div>
-        <div class="bl block4">4</div>
+        <div class="bl block">1</div>
+        <div class="bl block">2</div>
+        <div class="bl block">3</div>
+        <div class="bl block">4</div>
+        <div class="bl block">5</div>
+        <div class="bl block">6</div>
+        <div class="bl block">7</div>
+        <div class="bl n8 block">8</div>
+        <div class="bl n9 block">9</div>
     </div>
 </body>
 </html>

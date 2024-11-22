@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+        .grid
+        {
+            display: grid;
+            grid-template-areas: 
+                'h h h h h h'
+                'm c c c r r'
+                'm f f f f f';
+            background-color: bisque;
+            grid-gap: 10px;
+            padding: 20px;
+            
+        }
+        
+        .grid div
+        {
+            display: flex;
+/*            justify-content: center;*/
+            align-items: center;
+            padding: 5px;
+            border-radius: 5px;
+            color: wheat;
+        }
+        
+        .item-1
+        {
+            grid-area: h;
+            background-color: blueviolet;
+            display: flex;
+        }
+        
+        .item-1 div
+        {
+            margin: 0 10px;
+            padding: 10px;
+        }
+        .h3
+        {
+            margin-left: auto;
+        }
+        
+        .item-2
+        {
+            grid-area: m;
+            background-color: crimson;
+        }
+        
+        .item-3
+        {
+            grid-area: c;
+            background-color: darkslategrey;
+        }
+        
+        .item-4
+        {
+            grid-area: r;
+            background-color: forestgreen;
+        }
+        
+        .item-5
+        {
+            grid-area: f;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item-1">
+            <div>Home</div>
+            <div>About</div>
+            <div class="h3">LogIn</div>
+        </div>
+        <div class="item-2">Menu</div>
+        <div class="item-3">Content</div>
+        <div class="item-4">Right</div>
+        <div class="item-5">Footer</div>
+    </div>
+</body>
+</html>
