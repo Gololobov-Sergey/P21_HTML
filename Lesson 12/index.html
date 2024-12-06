@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        ul
+        {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        label
+        {
+            display: inline-block;
+            width: 70px;
+            
+        }
+        
+        form
+        {
+            width: 350px;
+            padding: 10px;
+            border: 2px solid;
+            border-radius: 10px;
+            
+        }
+        
+        input, textarea
+        {
+            font-family: sans-serif;
+            width: 250px;
+            border: 1px solid;
+        }
+        
+        textarea
+        {
+            vertical-align: top;
+        }
+        
+        form li
+        {
+            margin-top: 10px;
+        }
+        
+        input:focus, textarea:focus
+        {
+            border-color: blue;
+            background-color: aqua;
+        }
+        
+        input[id="send"], input[id="reset"]
+        {
+            margin: 0 10px 0 10px;
+        }
+        
+        .btn
+        {
+            display: flex;
+        }
+        
+        input[type="radio"], input[type="checkbox"]
+        {
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration</h1>
+    <form action="\action" method="get">
+       <ul>
+           <li>
+               <div>
+                   <label for="username">Name</label>
+                   <input type="text" id="username" name="uname" placeholder="Name" pattern="\d{3}"/>
+                </div>
+           </li>
+           <li>
+               <div>
+                   <label for="dirthday">Birth Day</label>
+                   <input type="date" id="dirthday" name="dirthday"/>
+                </div>
+           </li>
+           <li>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+                </div>               
+           </li>
+           <li>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>               
+           </li>
+           <li>
+               <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="massege"></textarea>
+                </div>
+           </li>
+           <li>
+               <div>
+                 <label for="Month">Month</label>
+                  <select type="text" name="month" value="3">
+                       <option>January</option>
+                       <option>February</option>
+                       <option selected>Marth</option>
+                       <option>April</option>
+                   </select>
+                </div>
+           </li>
+           <li>
+               <label for="num">Copy</label>
+               <input type="number" min="0" max="10">
+           </li>
+           
+           <li>
+               <label for="num">Copy</label>
+               <input type="color" name="color">
+           </li>
+           
+            <li>
+               <label for="file">File</label>
+               <input type="file" name="file">
+           </li>
+            <li>
+               <label for="file">File</label>
+               <input type="week" name="file">
+           </li>
+           <li>
+              <fieldset>
+                  <legend>Стать</legend>
+    <!--               <p>Стать</p>-->
+                   <input type="radio" value="Male" id="gender1" name="gender" checked/>
+                   <label for="gender1">Male</label>
+                   <input type="radio" value="Female" id="gender2" name="gender"/>
+                   <label for="gender2">Female</label>
+                   <input type="radio" value="Other" id="gender3" name="gender"/>
+                   <label for="gender3">Other</label>
+               </fieldset>
+           </li>
+           <li>
+              <label for="subscribe">Subscribe</label>
+               <input type="checkbox" id="subscribe" name="subscribe" checked/>
+               
+           </li>
+           <li>
+                <div class="btn">
+                    <input type="reset" id="reset"/>
+                    <input type="submit" value="Жми сюди" id="send"/>
+                </div>
+           </li>
+       </ul>
+        
+
+        
+    
+       
+        
+    </form>
+</body>
+</html>
